@@ -12,6 +12,7 @@ o.relativenumber = true
 
 o.signcolumn = 'yes'
 o.showmode = false
+vim.opt.inccommand = 'split'
 
 o.splitbelow = true
 o.splitright = true
