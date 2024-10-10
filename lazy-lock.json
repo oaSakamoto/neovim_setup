@@ -1,3 +1,5 @@
 {
-  "catppuccin": { "branch": "main", "commit": "7be452ee067978cdc8b2c5f3411f0c71ffa612b9" }
+  "CenterStage.nvim": { "branch": "main", "commit": "ae21c708a006f28fa4b864565d0e3e4d62303d58" },
+  "catppuccin": { "branch": "main", "commit": "7be452ee067978cdc8b2c5f3411f0c71ffa612b9" },
+  "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" }
 }
