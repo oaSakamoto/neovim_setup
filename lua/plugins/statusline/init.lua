@@ -27,10 +27,10 @@ return {
             sections = {
                 lualine_a = {'mode'},
                 lualine_b = {'fancy_branch', 'fancy_diff', 'diagnostics'},
-                lualine_c = {'fancy_cwd'},
-                lualine_x = {'encoding', 'fileformat', 'filetype'},
-                lualine_y = {'progress'},
-                lualine_z = {'location'},
+                lualine_c = {'fancy_cwd', 'filename'},
+                lualine_x = { 'fileformat', 'filetype'},
+                lualine_y = {},
+                lualine_z = {},
             },
             inactive_sections = {
                 lualine_a = {},
