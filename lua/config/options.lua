@@ -27,6 +27,7 @@ o.scrolloff = 999
 o.cursorline = true
 
 o.mouse=''
+o.clipboard = ''
 
 o.undofile = true
 
