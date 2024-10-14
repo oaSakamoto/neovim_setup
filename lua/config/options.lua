@@ -9,6 +9,7 @@ set({'n', 'v'}, '<Space>', '<Nop>', { silent = true })
 
 o.number = true
 o.relativenumber = true
+o.termguicolors = true
 
 o.signcolumn = 'yes'
 o.showmode = false
