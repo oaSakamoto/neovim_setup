@@ -12,8 +12,9 @@ o.relativenumber = true
 o.termguicolors = true
 
 o.signcolumn = 'yes'
+o.colorcolumn = '80'
 o.showmode = false
-vim.opt.inccommand = 'split'
+o.inccommand = 'split'
 
 o.splitbelow = true
 o.splitright = true
@@ -40,5 +41,3 @@ o.timeoutlen = 300
 
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-
-
