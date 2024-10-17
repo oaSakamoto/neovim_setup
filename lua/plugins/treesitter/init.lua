@@ -24,8 +24,10 @@ return {
         'vim',
         'vimdoc',
         'yaml',
+        'diff',
         'lua',
-        'python'
+        'python',
+        'zig',
       },
     },
     config = function(_, opts)
