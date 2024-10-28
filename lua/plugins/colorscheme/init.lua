@@ -6,6 +6,9 @@ return {
     flavor = 'mocha',
     opts = {
         transparent_background = true,
+        integrations = {
+          telescope = false,
+        },
     },
     config = function(_, opts)
         require('catppuccin').setup(opts)
