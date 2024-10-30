@@ -5,7 +5,7 @@ local o = vim.opt
 g.have_nerd_font = true
 g.mapleader = ' '
 g.localleader = ' '
-set({'n', 'v'}, '<Space>', '<Nop>', { silent = true })
+set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 o.number = true
 o.relativenumber = true
@@ -28,7 +28,7 @@ o.breakindent = true
 o.scrolloff = 999
 o.cursorline = true
 
-o.mouse=''
+o.mouse = ''
 o.clipboard = ''
 
 o.undofile = true
@@ -40,4 +40,4 @@ o.updatetime = 250
 o.timeoutlen = 300
 
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { multispace = '» ', trail = '·', nbsp = '␣' }
