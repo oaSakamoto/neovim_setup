@@ -2,6 +2,18 @@ return {
   {
     'folke/lazydev.nvim',
     ft = 'lua',
+    dependencies = {
+      {
+        'j-hui/fidget.nvim',
+        opts = {
+          notification = {
+            window = {
+              winblend = 0,
+            },
+          },
+        },
+      },
+    },
     opts = {
       library = {
         { path = 'luvit-meta/library', words = { 'vim%.uv' } },
