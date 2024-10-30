@@ -13,27 +13,27 @@ return {
       'saadparwaiz1/cmp_luasnip',
       'hrsh7th/cmp-path',
     },
-    config = function ()
-      local cmp = require 'cmp'
-      local luasnip = require 'luasnip'
-      luasnip.config.setup {}
+    config = function()
+      local cmp = require('cmp')
+      local luasnip = require('luasnip')
+      luasnip.config.setup({})
 
       cmp.setup({
-        snippet ={
+        snippet = {
           expand = function(args)
             luasnip.lsp_expand(args.body)
-          end
+          end,
         },
-        mapping = cmp.mapping.preset.insert {
+        mapping = cmp.mapping.preset.insert({
           ['<C-j>'] = cmp.mapping.select_next_item(),
           ['<C-k>'] = cmp.mapping.select_prev_item(),
 
           ['<C-b>'] = cmp.mapping.scroll_docs(-4),
           ['<C-m>'] = cmp.mapping.scroll_docs(4),
 
-          ['<C-a>'] = cmp.mapping.confirm {select = true},
+          ['<C-a>'] = cmp.mapping.confirm({ select = true }),
 
-          ['<C-Space>'] = cmp.mapping.complete {},
+          ['<C-Space>'] = cmp.mapping.complete({}),
 
           ['<C-l>'] = cmp.mapping(function()
             if luasnip.expand_or_locally_jumpable() then
@@ -45,7 +45,7 @@ return {
               luasnip.jump(-1)
             end
           end, { 'i', 's' }),
-        },
+        }),
         sources = {
           {
             name = 'lazydev',
@@ -57,6 +57,6 @@ return {
           { name = 'path' },
         },
       })
-    end
+    end,
   },
 }

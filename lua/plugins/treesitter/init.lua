@@ -2,7 +2,7 @@ return {
   {
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
-      {'RRethy/nvim-treesitter-endwise',},
+      { 'RRethy/nvim-treesitter-endwise' },
       'nvim-treesitter/playground',
     },
     build = ':TSUpdate',
@@ -32,16 +32,15 @@ return {
     },
     config = function(_, opts)
       require('nvim-treesitter.configs').setup(opts)
-    end
+    end,
   },
   {
     'windwp/nvim-ts-autotag',
   },
   {
     'altermo/ultimate-autopair.nvim',
-    event =  { 'InsertEnter', 'CmdlineEnter' },
+    event = { 'InsertEnter', 'CmdlineEnter' },
     branch = 'v0.6',
-    opts = {}
+    opts = {},
   },
 }
-

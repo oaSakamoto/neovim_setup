@@ -1,7 +1,7 @@
 return {
   'folke/noice.nvim',
   event = 'VeryLazy',
-  dependencies =  {
+  dependencies = {
     'MunifTanjim/nui.nvim',
     {
       'rcarriga/nvim-notify',
@@ -11,9 +11,9 @@ return {
           -- stages = 'static',
           render = 'compact',
           timeout = 3000,
-          fps = 60
+          fps = 60,
         })
-      end
+      end,
     },
   },
   opts = {
