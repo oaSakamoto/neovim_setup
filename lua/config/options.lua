@@ -39,5 +39,7 @@ o.smartcase = true
 o.updatetime = 250
 o.timeoutlen = 300
 
-vim.opt.list = true
-vim.opt.listchars = { multispace = '» ', trail = '·', nbsp = '␣' }
+o.list = true
+o.listchars = { multispace = '» ', trail = '·', nbsp = '␣' }
+o.conceallevel = 3
+o.concealcursor = 'nvc'

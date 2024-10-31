@@ -8,9 +8,11 @@ return {
     build = ':TSUpdate',
     event = { 'bufReadPost', 'bufNewFile' },
     opts = {
+      auto_install = true,
       endwise = {
         enable = true,
       },
+      highlight = { enable = true },
       ensure_installed = {
         'bash',
         'dockerfile',
@@ -25,6 +27,8 @@ return {
         'vimdoc',
         'yaml',
         'diff',
+        'norg',
+        'norg_meta',
         'lua',
         'python',
         'zig',
