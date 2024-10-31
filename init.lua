@@ -1,4 +1,4 @@
-require 'config.options'
-require 'config.lazy'
-require 'utils.clipboard'
-
+require('config.options')
+require('config.lazy')
+require('config.keymaps')
+require('utils.clipboard')

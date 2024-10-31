@@ -22,11 +22,6 @@ return {
           ['core.concealer'] = {
             config = {
               folds = false,
-              icons = {
-                code_block = {
-                  conceal = true,
-                },
-              },
             },
           },
           ['core.completion'] = {
@@ -46,6 +41,7 @@ return {
               },
             },
           },
+          ['core.integrations.treesitter'] = {},
         },
       })
       vim.wo.conceallevel = 2
