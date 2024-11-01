@@ -5,9 +5,43 @@ return {
     dependencies = {
       {
         'L3MON4D3/LuaSnip',
+        opts = function()
+          local types = require('luasnip.util.types')
+          return {
+            history = true,
+            delete_check_events = 'TextChanged',
+            -- Display a cursor-like placeholder in unvisited nodes of the snippet.
+            ext_opts = {
+              [types.insertNode] = {
+                unvisited = {
+                  virt_text = { { '|', 'Conceal' } },
+                  -- virt_text_pos = "inline",
+                },
+              },
+              [types.exitNode] = {
+                unvisited = {
+                  virt_text = { { '|', 'Conceal' } },
+                  -- virt_text_pos = "inline",
+                },
+              },
+            },
+          }
+        end,
         build = (function()
           return 'make install_jsregexp'
         end)(),
+        config = function(_, opts)
+          require('luasnip').setup(opts)
+
+          local snippets_folder = vim.fn.stdpath('config') .. '/lua/plugins/completion/snippets/'
+
+          ---@diagnostic disable-next-line: assign-type-mismatch
+          require('luasnip.loaders.from_lua').lazy_load({ paths = snippets_folder })
+
+          vim.api.nvim_create_user_command('LuaSnipEdit', function()
+            require('luasnip.loaders.from_lua').edit_snippet_files()
+          end, {})
+        end,
       },
       'hrsh7th/cmp-nvim-lsp',
       'saadparwaiz1/cmp_luasnip',
