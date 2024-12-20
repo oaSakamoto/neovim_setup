@@ -4,6 +4,7 @@ return {
     dependencies = {
       { 'RRethy/nvim-treesitter-endwise' },
       'nvim-treesitter/playground',
+      { 'nushell/tree-sitter-nu', build = ':TSUpdate nu' },
     },
     build = ':TSUpdate',
     event = { 'bufReadPost', 'bufNewFile' },
@@ -17,6 +18,7 @@ return {
         'bash',
         'dockerfile',
         'html',
+        'css',
         'markdown',
         'markdown_inline',
         'org',
@@ -29,9 +31,12 @@ return {
         'diff',
         'norg',
         'norg_meta',
+        'c',
         'lua',
         'python',
         'zig',
+        'javascript',
+        'nu',
       },
     },
     config = function(_, opts)

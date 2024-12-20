@@ -53,7 +53,39 @@ ls.add_snippets('norg', {
       { i(1) }
     )
   ),
-
+  s(
+    'csh',
+    fmt(
+      [[
+    @code sh
+    {}
+    @end
+    ]],
+      { i(1) }
+    )
+  ),
+  s(
+    'ccss',
+    fmt(
+      [[
+    @code css
+    {}
+    @end
+    ]],
+      { i(1) }
+    )
+  ),
+  s(
+    'chtml',
+    fmt(
+      [[
+    @code html
+    {}
+    @end
+    ]],
+      { i(1) }
+    )
+  ),
   s(
     'cpy',
     fmt(
